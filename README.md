@@ -13,7 +13,7 @@ This project is a FastAPI application that processes PDF documents, stores them 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/fastapi-qdrant-document-processing.git
+git clone https://github.com/Uvaish786/rag-pipleline.git
 cd fastapi-qdrant-document-processing
 ```
 ### 2. install database 
