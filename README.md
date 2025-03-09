@@ -11,7 +11,16 @@ This project is a FastAPI application that processes PDF documents, stores them 
 
 ## Setup
 
-1. Clone the repository.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/fastapi-qdrant-document-processing.git
+cd fastapi-qdrant-document-processing
+```
+### 2. install database 
+```
+    docker pull qdrant/qdrant
+    docker run -p 6333:6333 qdrant/qdrant
+```
 2. Install dependencies: `pip install -r requirements.txt`.
 3. Run the FastAPI application: `python -m app.main`.
 4. Access the API at `http://localhost:8000`.
