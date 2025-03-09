@@ -144,8 +144,6 @@ class DocumentService:
 
     def parsing_to_llm(self, query, content):
         try:
-
-
             full_response = []
             prompt = """
             Extract relevant information from the provided PDF data to answer the following question:

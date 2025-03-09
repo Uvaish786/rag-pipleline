@@ -9,7 +9,6 @@ app = FastAPI()
 
 document_service = DocumentService()
 
-
 @app.post("/upload/")
 async def upload_documents(files: list[UploadFile] = File(...)):
     """
@@ -51,9 +50,6 @@ async def upload_documents(files: list[UploadFile] = File(...)):
     except Exception as e:
         logger.error(f"Unexpected error: {str(e)}")
         raise HTTPException(status_code=500, detail="An unexpected error occurred.")
-
-
-
 
 @app.post("/query/")
 async def query_document(querys: list[str]):
